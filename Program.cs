@@ -33,7 +33,7 @@ namespace ExercicioEquacao2
       }
       else
       {
-        Console.WriteLine($"\nO valor de delta é: {delta}");
+        Console.WriteLine($"\nO valor de delta é: {delta:N2}");
         Console.WriteLine($"x¹ = {x1:N2}");
         Console.WriteLine($"x² = {x2:N2}");
       }
