@@ -19,8 +19,6 @@ namespace ExercicioEquacao2
       c = Double.Parse(Console.ReadLine());
 
       delta = Math.Pow(b, 2) - 4 * a * c;
-      x1 = (-b + Math.Sqrt(delta)) / (2 * a);
-      x2 = (-b - Math.Sqrt(delta)) / (2 * a);
 
 
       if (a == 0)
@@ -32,8 +30,12 @@ namespace ExercicioEquacao2
         Console.WriteLine($"Como delta é igual a {delta:N2} a equação não possui raízes reais!");
       }
       else
-      {
+      {       
         Console.WriteLine($"\nO valor de delta é: {delta:N2}");
+        
+        x1 = (-b + Math.Sqrt(delta)) / (2 * a);
+        x2 = (-b - Math.Sqrt(delta)) / (2 * a);        
+        
         Console.WriteLine($"x¹ = {x1:N2}");
         Console.WriteLine($"x² = {x2:N2}");
       }
